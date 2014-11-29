@@ -23,4 +23,12 @@ class Plugin extends PluginBase
         ];
     }
 
+
+    public function registerComponents()
+    {
+        return [
+            '\Responsiv\Zephyr\Components\BrowseMap' => 'browseMap',
+        ];
+    }
+
 }

@@ -1,1 +1,7 @@
 1.0.1: First version of Zephyr
+1.0.2:
+    - Create database tables
+    - create_posts_table.php
+    - create_post_categories_table.php
+    - create_post_statuses_table.php
+    - seed_tables.php
