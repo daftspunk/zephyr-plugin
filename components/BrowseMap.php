@@ -51,7 +51,7 @@ class BrowseMap extends ComponentBase
             throw new ValidationException($validation);
 
         $post = new PostModel;
-        $post->save(post('Post'));
+        $post->save(post('Post'), post('_session_key'));
 
         $query = http_build_query([
             'lat' => $post->latitude,
