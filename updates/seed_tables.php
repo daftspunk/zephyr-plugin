@@ -3,7 +3,7 @@
 use October\Rain\Database\Updates\Seeder;
 use Responsiv\Zephyr\Models\PostStatus;
 
-class SeedPostStatusTables extends Seeder
+class SeedTables extends Seeder
 {
 
     public function run()
