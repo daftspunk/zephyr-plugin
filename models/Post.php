@@ -32,4 +32,8 @@ class Post extends Model
         'user'             => ['RainLab\User\Models\User'],
     ];
 
+    public $attachOne = [
+        'image' => ['System\Models\File']
+    ];
+
 }

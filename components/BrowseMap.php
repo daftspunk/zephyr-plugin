@@ -1,6 +1,7 @@
 <?php namespace Responsiv\Zephyr\Components;
 
 use Cms\Classes\ComponentBase;
+use Responsiv\Zephyr\Models\Post as PostModel;
 
 class BrowseMap extends ComponentBase
 {
@@ -8,8 +9,8 @@ class BrowseMap extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'BrowseMap Component',
-            'description' => 'No description provided yet...'
+            'name'        => 'Browse Map',
+            'description' => 'Map and posting functionality'
         ];
     }
 
@@ -18,9 +19,16 @@ class BrowseMap extends ComponentBase
         return [];
     }
 
+    public function getEditPost()
+    {
+        $post = new PostModel;
+        return $post;
+    }
+
     public function onPostAd()
     {
-        
+        $post = new PostModel;
+        $post->save(post());
     }
 
 }
